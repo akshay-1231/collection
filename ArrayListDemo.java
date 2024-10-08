@@ -1,11 +1,12 @@
 package collection;
-
+                                 
 import java.util.ArrayList;
 
 public class ArrayListDemo {
 
 	public static void main(String[] args) {
 		ArrayList arrList=new ArrayList();
+		 //colection obj of same datatype
 		 Employee emp1=new  Employee(1,"akshay",344343);
 		 Employee emp2=new  Employee(2,"shyam",344343);
 		 Employee emp3=new  Employee(3,"ajay",5434343);

@@ -7,9 +7,12 @@ public class ArrayListDemo2 {
 
 	public static void main(String[] args) {
 		ArrayList arrList=new ArrayList();
+		//collection diff datatype
 		arrList.add(10);
 		arrList.add(10.22);
 		arrList.add(true); 
+		arrList.add("akshay");
+		arrList.add("akshay");
 		arrList.add("akshay");
 		arrList.add("ajay");
 		
@@ -33,6 +36,41 @@ public class ArrayListDemo2 {
 			 System.out.println(itr.next());
 			 
 		 }
+		 System.out.println("=====================");
+		 //check whether int if present,else -1
+		 boolean res=arrList.contains("akshay");
+		 System.out.println(res);
+		 
+		 int res1=arrList.indexOf("akshay");
+		 System.out.println(res1);
+		 
+		 
+		 res1=arrList.lastIndexOf("akshay");
+		 System.out.println("last index of"+res1);
+		 
+		 System.out.println("using remove metod");
+		 	//to remov eobj
+		 arrList.remove("akshay");//using obj
+		 arrList.remove(1);//using index
+        for(int i=0;i<arrList.size();i++) {
+			 
+			 System.out.println(arrList.get(i));
+			 System.out.println("=====================");
+		 }
+		 //delete all elements
+		 arrList.clear();
+		 System.out.println(arrList.isEmpty());//t and f
+		 arrList.addFirst(22);
+		 arrList.addLast(26);
+		 
+		 //to change obj
+		 arrList.set(1,88);
+		 System.out.println("=====================");
+		    for(int i=0;i<arrList.size();i++) {
+				 
+				 System.out.println(arrList.get(i));
+				 System.out.println("=====================");
+			 }
 
 }
 	
